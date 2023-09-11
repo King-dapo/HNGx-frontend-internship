@@ -14,14 +14,14 @@ const currentDay = days[currentDate]
 
 document.getElementById(
     "day"
-).innerHTML = `<b> Day Of The Week: </b> ${currentDay}`;
+).innerHTML = `${currentDay}`;
 
 function milliseconds(){
     const date = new Date();
     const currentTime = date.getTime();
     document.getElementById(
          "time"
-    ).innerHTML = `<b> UTC Time: <b/> ${currentTime}`;
+    ).innerHTML = ` ${currentTime}`;
 }
 
 setInterval(milliseconds, 1000)
